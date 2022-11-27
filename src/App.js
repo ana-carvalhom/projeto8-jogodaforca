@@ -72,6 +72,11 @@ word.forEach((letra, i) => {
   }
 })
 setGuessWord(newGuessedWord)
+
+if (!newGuessedWord.includes("_ ")){
+  setWordColor("green")
+  gameisFinished()
+}
 }
 
 function isWrong(l){
