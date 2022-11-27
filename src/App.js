@@ -92,8 +92,9 @@ function guessTypedWord(){
 gameisFinished()
 }
 function gameisFinished(){
-    console.log("Jogo finalizado")
+    setLetter(alfabeto)
     setTypeGuess("")
+    setDisabled(true)
 }
 
 

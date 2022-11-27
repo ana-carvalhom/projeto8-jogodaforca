@@ -6,7 +6,7 @@ export default function Chute(props){
             <p>Já sei a palavra!</p>
             <input disabled={inputChute}  
             value={typeGuess} 
-            onChange={(e) => setTypeGuess(e.target.value)}/>
+            onChange={(event) => setTypeGuess(event.target.value)}/>
             <button className="letra chutar" disabled={buttonChute} 
           onClick={guessTypedWord} >Chutar</button>
         </div>
