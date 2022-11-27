@@ -134,3 +134,24 @@ input {
 button {
     cursor: pointer;
 }
+
+.black{
+    color: black;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.red{
+    color: red;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+.green{
+    color: green;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+}

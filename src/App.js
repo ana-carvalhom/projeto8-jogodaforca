@@ -17,6 +17,7 @@ function App() {
   const [letter, setLetter] = useState((alfabeto))
   const [specialCharacters, setSpecialCharacters] = useState("")
   const [typeGuess, setTypeGuess] = useState("")
+  const [wordColor, setWordColor] = useState("black")
     
 function startGame(){
   setDisabled(false)
@@ -24,6 +25,7 @@ function startGame(){
   setLetter([])
   setImageForca(0)
   setTypeGuess("")
+  setWordColor("black")
 }
 
 function randomWord(){
@@ -82,10 +84,12 @@ function guessTypedWord(){
   let wordToString = ""
   word.forEach((letter) => wordToString += letter)
   if (typeGuess === wordToString){
+    setWordColor("green")
     console.log(typeGuess)
     console.log("a palavra está correta")
   } else {
     console.log(typeGuess)
+    setWordColor("red")
     console.log("a palavra está errada")
     setImageForca(5)
   }
@@ -104,6 +108,7 @@ function gameisFinished(){
     startGame={startGame} 
     imageForca={images[imageForca]} 
     guessWord={guessWord}
+    wordColor={wordColor}
     />
     <Letras 
     alfabeto={alfabeto} 
