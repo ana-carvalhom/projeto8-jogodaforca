@@ -86,6 +86,7 @@ function guessTypedWord(){
   } else {
     console.log(typeGuess)
     console.log("a palavra está errada")
+    setImageForca(5)
   }
 
 }
