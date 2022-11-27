@@ -92,11 +92,23 @@ img {
     align-items: center;
 }
 
+.chutarPalavra >button:hover, .letras >button:hover {
+    background: #39739D;
+    border: 1px solid #7AA7C7;
+    border-radius: 3px;
+    color: #ffffff
+}
+
+
+
 .chutarPalavra >button:disabled, .letras >button:disabled {
     background: #9FAAB5;
     border: 1px solid #7AA7C7;
     border-radius: 3px;
+    color: #798A9F;
 }
+
+
 
 .chutarPalavra p {
     font-family: 'Roboto';
