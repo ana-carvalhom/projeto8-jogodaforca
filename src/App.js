@@ -16,6 +16,7 @@ function App() {
   const [guessWord, setGuessWord] = useState([])
   const [letter, setLetter] = useState((alfabeto))
   const [specialCharacters, setSpecialCharacters] = useState("")
+  const [typeGuess, setTypeGuess] = useState("")
     
 function startGame(){
   setDisabled(false)
@@ -70,25 +71,32 @@ word.forEach((letra, i) => {
 setGuessWord(newGuessedWord)
 }
 
-// function acertouLetra(l){
-//   const novaPalavraJogo = [...palavraDoJogo]
-//   palavraEscolhida.forEach((letra, i) => {
-//       if(stringSemAcentos[i] === l){
-//           novaPalavraJogo[i] = letra
-//       }
-//   })
-//   setPalavraDoJogo(novaPalavraJogo)
-
 function isWrong(l){
 console.log("essa palavra não tem a letra " + l)
 const newForcaImage = imageForca + 1
 setImageForca(newForcaImage)
 }
+
+function guessTypedWord(){
+  let wordToString = ""
+  word.forEach((letter) => wordToString += letter)
+  if (typeGuess === wordToString){
+    console.log(typeGuess)
+    console.log("a palavra está correta")
+  } else {
+    console.log(typeGuess)
+    console.log("a palavra está errada")
+  }
+
+}
+
+
+
   return (
    <div className="containerJogo">
     <Jogo startGame={startGame} imageForca={images[imageForca]} guessWord={guessWord}/>
     <Letras alfabeto={alfabeto} letter={letter} chosenLetter={chosenLetter} />
-    <Chute inputChute={disabled} buttonChute={disabled} />
+    <Chute inputChute={disabled} buttonChute={disabled} guessTypedWord={guessTypedWord} setTypeGuess={setTypeGuess}/>
    </div>
   
    
