@@ -23,6 +23,7 @@ function startGame(){
   randomWord()
   setLetter([])
   setImageForca(0)
+  setTypeGuess("")
 }
 
 function randomWord(){
@@ -88,16 +89,32 @@ function guessTypedWord(){
     console.log("a palavra está errada")
     setImageForca(5)
   }
-
+gameisFinished()
 }
-
+function gameisFinished(){
+    console.log("Jogo finalizado")
+    setTypeGuess("")
+}
 
 
   return (
    <div className="containerJogo">
-    <Jogo startGame={startGame} imageForca={images[imageForca]} guessWord={guessWord}/>
-    <Letras alfabeto={alfabeto} letter={letter} chosenLetter={chosenLetter} />
-    <Chute inputChute={disabled} buttonChute={disabled} guessTypedWord={guessTypedWord} setTypeGuess={setTypeGuess}/>
+    <Jogo 
+    startGame={startGame} 
+    imageForca={images[imageForca]} 
+    guessWord={guessWord}
+    />
+    <Letras 
+    alfabeto={alfabeto} 
+    letter={letter} 
+    chosenLetter={chosenLetter} 
+    />
+    <Chute 
+    inputChute={disabled} 
+    buttonChute={disabled} 
+    guessTypedWord={guessTypedWord} 
+    setTypeGuess={setTypeGuess}
+    typeGuess={typeGuess}/>
    </div>
   
    
