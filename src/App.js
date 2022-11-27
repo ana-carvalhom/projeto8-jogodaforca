@@ -78,6 +78,11 @@ function isWrong(l){
 console.log("essa palavra não tem a letra " + l)
 const newForcaImage = imageForca + 1
 setImageForca(newForcaImage)
+
+if (newForcaImage === 5){
+  setWordColor("red")
+  gameisFinished()
+}
 }
 
 function guessTypedWord(){
@@ -99,6 +104,7 @@ function gameisFinished(){
     setLetter(alfabeto)
     setTypeGuess("")
     setDisabled(true)
+    setGuessWord(word)
 }
 
 
