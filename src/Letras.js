@@ -1,61 +1,9 @@
 export default function Letras() {
-    return (
+    const alfabeto = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+    return (        
         <div className="letras">
-            <button className="letra">P
-            </button>
-            <button className="letra">P
-            </button>
-            <button className="letra">P
-            </button>
-            <button className="letra">P
-            </button>
-            <button className="letra">P
-            </button>
-            <button className="letra">P
-            </button>
-            <button className="letra">P
-            </button>
-            <button className="letra">P
-            </button>
-            <button className="letra">P
-            </button>
-            <button className="letra">P
-            </button>
-            <button className="letra">P
-            </button>
-            <button className="letra">P
-            </button>
-            <button className="letra">P
-            </button>
-            <button className="letra">P
-            </button>
-            <button className="letra">P
-            </button>
-            <button className="letra">P
-            </button>
-            <button className="letra">P
-            </button>
-            <button className="letra">P
-            </button>
-            <button className="letra">P
-            </button>
-            <button className="letra">P
-            </button>
-            <button className="letra">P
-            </button>
-            <button className="letra">P
-            </button>
-            <button className="letra">P
-            </button>
-            <button className="letra">P
-            </button>
-            <button className="letra">P
-            </button>
-            <button className="letra">P
-            </button>
-            
-           
-
+            {alfabeto.map((letra) =>  <button className="letra">{letra}
+            </button>)}
         </div>
     )
 }
