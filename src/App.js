@@ -1,12 +1,16 @@
 import Jogo from "./Jogo"
 import Letras from "./Letras";
+import Chute from "./Chute";
 
 function App() {
   return (
-    <>
+   <div className="containerJogo">
     <Jogo />
     <Letras />
-   </>
+    <Chute />
+   </div>
+    
+   
    
    
   );

@@ -1,7 +1,11 @@
 * {
     box-sizing: border-box;
 
+}
 
+.containerJogo{
+    width: 1025px;
+    height: 839px;
 }
 
 
@@ -44,15 +48,14 @@ img {
     font-size: 50px;
 }
 
-.letras{
+.letras {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    background-color: #27AE60;
     width: 664px;
     height: 91px;
-    margin-left: 400px;
+    margin-left: 250px;
     margin-top: 70px;
 
 }
@@ -70,3 +73,34 @@ img {
     margin: 4px;
 }
 
+.chutarPalavra {
+    width: 624px;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 250px;
+    margin-top: 56px;
+    margin-bottom: 100px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.chutarPalavra p {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 20px;
+}
+
+input {
+    width: 353px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 3px;
+}
+
+.chutar {
+    width: 100px;
+    height: 40px;
+}
