@@ -11,8 +11,8 @@ function App() {
   return (
    <div className="containerJogo">
     <Jogo />
-    <Letras />
-    <Chute inputChute={disabled}  />
+    <Letras buttonLetra={disabled}/>
+    <Chute inputChute={disabled} buttonChute={disabled} />
    </div>
     
    
