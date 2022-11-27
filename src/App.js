@@ -22,7 +22,7 @@ function randomWord(){
   const wordCount = palavras.length
   const wordPosition = Math.floor(Math.random()* wordCount) 
   const showWord = palavras[wordPosition]
-  const wordToArray = showWord.split("")
+  const wordToArray = showWord.split("").map(() => " _")
   setWord(wordToArray)
 
 }
